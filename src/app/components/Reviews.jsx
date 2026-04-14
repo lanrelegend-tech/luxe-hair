@@ -20,7 +20,7 @@ function Reviews() {
 
         {/* TITLE */}
         <h1 className="text-center text-5xl text-[#8C6A00] font-[var(--font-playfair)]">
-          𝓣𝓮𝓼𝓽𝓲𝓶𝓸𝓷𝓲𝓪𝓵𝓼
+          testimonals
         </h1>
 
         <p className="text-center text-white/70 mt-3">

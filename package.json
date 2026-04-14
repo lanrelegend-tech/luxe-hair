@@ -1,14 +1,16 @@
 {
-  "name": "luxe-hair",
+  "name": "luxe-hair-salon",
   "version": "0.1.0",
   "private": true,
+  "description": "LUXE HAIR - Luxury hair salon website based in London. A modern booking, pricing, and portfolio experience for premium hair services.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^12.38.0",
     "next": "16.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",

@@ -1,109 +1,73 @@
-function LandingPage() {
+import Link from "next/link";
+
+export default function LandingPage() {
   return (
-    <div className="bg-[#F7F4EF] font-[var(--font-montserrat)]">
+    <section className="bg-[#F7F4EF] font-[var(--font-montserrat)] overflow-hidden">
 
-      {/* NAVBAR */}
-      <div className="flex items-center justify-between px-10 py-6 relative z-20">
-
-        {/* MENU */}
-        <div className="flex text-black gap-6 text-xs font-bold tracking-wide">
-          <h1 className="hover:text-[#C9A227] transition cursor-pointer">Home</h1>
-          <h1 className="hover:text-[#C9A227] transition cursor-pointer">Pricing</h1>
-          <h1 className="hover:text-[#C9A227] transition cursor-pointer">About</h1>
-          <h1 className="hover:text-[#C9A227] transition cursor-pointer">Booking</h1>
-          <h1 className="hover:text-[#C9A227] transition cursor-pointer">Contact</h1>
-          <h1 className="hover:text-[#C9A227] transition cursor-pointer">Reviews</h1>
-          <h1 className="hover:text-[#C9A227] transition cursor-pointer">Blog</h1>
-        </div>
-
-        {/* LOGO */}
-        <div className="absolute left-1/2 -translate-x-1/2 text-black font-bold text-[18px] tracking-wider">
-          LUXE HAIR
-        </div>
-
-        {/* BUTTON */}
-        <button className="border border-black px-4 py-2 text-xs font-bold bg-black text-white hover:bg-[#C9A227] hover:text-black transition">
-          RESERVE NOW
-        </button>
-
-      </div>
-
-      {/* HERO */}
-      <div className="relative min-h-screen flex items-center justify-center text-center px-6">
+      {/* ================= HERO ================= */}
+      <header className="relative min-h-screen flex items-center justify-center text-center px-6">
 
         {/* BACK IMAGES */}
         <img
           src="/project3.jpg"
-          className="absolute top-16 left-1/2 -translate-x-1/2 w-[620px] h-[260px] object-cover rounded-xl opacity-70 brightness-50"
+          alt="Salon interior"
+          className="absolute top-20 left-1/2 -translate-x-1/2 w-[620px] h-[260px] object-cover rounded-xl opacity-70 brightness-50"
         />
 
         <img
           src="/hair7.jpg"
-          className="hidden md:block absolute left-10 top-1/2 -translate-y-1 w-56 h-80 object-cover rounded-xl opacity-70 brightness-50"
+          alt="Hair style left"
+          className="hidden md:block absolute left-10 top-1/2 -translate-y-1/2 w-56 h-80 object-cover rounded-xl opacity-70 brightness-50"
         />
 
         <img
           src="/hair1.jpg"
-          className="hidden md:block absolute right-10 top-1/2 -translate-y-1/9 w-64 h-96 object-cover rounded-xl opacity-70 brightness-50"
+          alt="Hair style right"
+          className="hidden md:block absolute right-10 top-1/2 -translate-y-1/2 w-64 h-96 object-cover rounded-xl opacity-70 brightness-50"
         />
 
         {/* HERO TEXT */}
-        <div className="relative z-20 flex flex-col mt-50 items-center">
+        <div className="relative z-20 flex flex-col items-center">
 
-          {/* GREAT VIBES */}
-          <div className="font-[var(--font-great-vibes)] text-[55px] md:text-[85px] leading-[1.1]">
-
-            <p className="text-[#2E2E2E] opacity-60 tracking-[0.35em]">
-              ABOUT
-            </p>
-
-            <h1 className="text-[#C9A227] tracking-wider hover:scale-105 transition duration-300 drop-shadow-md">
-              LUXE HAIR
-            </h1>
-
-            <p className="text-[#2E2E2E] opacity-60 tracking-[0.4em]">
-              LONDON
-            </p>
-
-          </div>
-
-          {/* SUB TEXT */}
-          <h1 className="mt-5 text-black text-lg font-medium">
-            This one is built to last.
+          {/* MAIN BRAND (SEO H1 FIXED) */}
+          <h1 className="text-[#C9A227] font-[var(--font-great-vibes)] text-[60px] md:text-[90px] mt-30 leading-none">
+            LUXE HAIR
           </h1>
 
-          <p className="text-black/80 text-sm max-w-md mt-2 leading-6">
+          <p className="mt-3 text-black text-lg font-medium">
+            This one is built to last.
+          </p>
+
+          <p className="text-black/70 text-sm max-w-md mt-2 leading-6">
             For people who want their hair to work without thinking about it.
           </p>
 
-          {/* LOGO */}
           <img
             src="/salon.png"
-            alt="Salon Logo"
+            alt="Salon logo"
             className="mt-10 w-20 h-20 object-contain opacity-70 hover:opacity-100 transition"
           />
 
         </div>
-      </div>
+      </header>
 
-      {/* ABOUT SECTION */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 px-10 py-24">
+      {/* ================= ABOUT SECTION ================= */}
+      <section className="flex flex-col md:flex-row items-center justify-center gap-12 px-6 md:px-10 py-24">
 
-        {/* IMAGE */}
         <img
           src="/hair8.jpg"
-          className="w-64 h-96 object-cover rounded-xl opacity-90 brightness-75 hover:scale-105 transition"
+          alt="About Luxe Hair"
+          className="w-full md:w-64 h-96 object-cover rounded-xl brightness-75 hover:scale-105 transition"
         />
 
-        {/* TEXT */}
         <div className="text-black max-w-2xl text-sm leading-7 space-y-4">
 
-          <h1 className="text-xl font-bold">
+          <h2 className="text-xl font-bold">
             LUXE HAIR is a one-to-one studio in LONDON
-          </h1>
+          </h2>
 
           <p>
-            Specialising in cuts built to last. Each cut is designed to hold its shape naturally without relying on styling.
+            Specialising in cuts built to last. Each cut is designed to hold its shape naturally without daily styling.
           </p>
 
           <p>
@@ -111,23 +75,61 @@ function LandingPage() {
           </p>
 
           <p>
-            The result is consistent, balanced hair that requires less daily correction and stays in shape longer.
+            The result is consistent, balanced hair that grows beautifully over time.
           </p>
 
-          <h2 className="font-bold text-[#C9A227] mt-6">
+          <h3 className="font-bold text-[#C9A227] mt-6">
             Why most haircuts stop working
-          </h2>
+          </h3>
 
           <p>
-            Most haircuts are designed for the day you leave the salon — not for the weeks after. They rely on styling or product to hold shape.
+            Most haircuts are designed for the moment you leave the salon — not long-term wear.
           </p>
 
         </div>
+      </section>
 
-      </div>
+      {/* ================= REVIEWS ================= */}
+      <section
+        id="reviews"
+        className="text-center py-24 bg-[#EFE9DF]"
+      >
 
-    </div>
+        <h2 className="text-3xl font-[var(--font-playfair)] text-black">
+          What Clients Are Saying
+        </h2>
+
+        <p className="text-black/60 mt-4 text-sm">
+          Real experiences from Luxe Hair clients in London.
+        </p>
+
+        <div className="mt-12 flex flex-col md:flex-row gap-6 justify-center px-6">
+
+          <div className="bg-white p-6 rounded-2xl shadow-lg max-w-sm">
+            <p className="text-sm text-black/70">
+              “The best haircut I’ve ever had. It still looks perfect weeks later.”
+            </p>
+            <h4 className="mt-4 font-bold text-[#8C6A00]">— Sarah</h4>
+          </div>
+
+          <div className="bg-white p-6 rounded-2xl shadow-lg max-w-sm">
+            <p className="text-sm text-black/70">
+              “Super clean, professional and very detailed.”
+            </p>
+            <h4 className="mt-4 font-bold text-[#8C6A00]">— Daniel</h4>
+          </div>
+
+          <div className="bg-white p-6 rounded-2xl shadow-lg max-w-sm">
+            <p className="text-sm text-black/70">
+              “Finally a salon that understands structure.”
+            </p>
+            <h4 className="mt-4 font-bold text-[#8C6A00]">— Amara</h4>
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
   );
 }
-
-export default LandingPage;

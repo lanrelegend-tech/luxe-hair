@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="bg-[#181C1A] text-white font-[var(--font-montserrat)]">
+    <div className="bg-[#181C1A] text-white font-[var(--font-montserrat)] pb-10">
 
       <div className="flex flex-wrap justify-center gap-16 py-20 px-6">
 
