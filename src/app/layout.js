@@ -24,7 +24,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://luxe-hair-six.vercel.app"),
 
   title: {
     default: "Luxe Hair | Luxury Hair Salon London",
@@ -47,7 +47,7 @@ export const metadata = {
     title: "Luxe Hair | Luxury Hair Salon London",
     description:
       "Premium hair salon in London offering modern cuts, styling and booking.",
-    url: "https://your-domain.com",
+    url: "https://luxe-hair-six.vercel.app",
     siteName: "Luxe Hair",
     images: [
       {
